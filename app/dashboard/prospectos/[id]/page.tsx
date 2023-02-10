@@ -1,3 +1,4 @@
+import { BtnCrear } from "@/components/comunes/BtnCrear"
 import { TableProspectosId } from "@/components/prospectos/components/TableProspectosId"
 
 export default function Prospectos({ params }: any) {
@@ -27,7 +28,7 @@ export default function Prospectos({ params }: any) {
 
                     <div className="mt-5 flex justify-between">
                         <p className="font-black text-xl">Prospectos Curso SIAF Básico</p>
-                        <button className="bg-cyan-400 text-white rounded-full font-bold py-2 px-3">+ Agregar Nuevo</button>
+                        <BtnCrear tipo={"dashboard/prospectos/crearprospecto"} />
                     </div>
 
                     <TableProspectosId/>

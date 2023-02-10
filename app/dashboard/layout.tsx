@@ -7,7 +7,7 @@ export default function LayoutDash({ children, }: { children: React.ReactNode })
     return (
 
 
-        <body className="bg-bg-fondoDas">
+        <body className="bg-white">
 
             <div className="flex items-start">
                 <Menu />

@@ -130,7 +130,11 @@ export default function TableData() {
         <>
             <div className='w-full flex justify-between items-center mt-5'>
                 <FilterComponent setFilterText={setFilterText} tipo={"Buscar Certificados"} />
-                <button onClick={() => downloadCSV(filteredItems)} className="text-gray-500 focus:text-blue-600"><i className="fa-solid fa-file-excel fa-2x"></i></button>
+                <div className="flex gap-3">
+                    <button onClick={() => downloadCSV(filteredItems)} ><i className="fa-solid fa-file-excel text-gray-400 fa-2x focus:text-green-500"></i></button>
+                    <i className="fa-solid fa-file text-gray-400 fa-2x focus:text-red-500"></i>
+                    <i className="fa-solid fa-print text-gray-400 fa-2x focus:text-blue-500"></i>
+                </div>
             </div>
             <div className='w-full flex justify-end mt-5'>
                 <button className="text-white bg-sky-400 rounded-full px-3 py-2 flex items-center gap-2 border-2 border-sky-400"><i className="fa-solid fa-plus"></i>Agregar Nuevo</button>

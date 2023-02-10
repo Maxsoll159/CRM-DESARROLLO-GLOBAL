@@ -4,7 +4,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="bg-white w-full shadow-2xl">
+            <div className="bg-white w-full shadow-md">
                 <div className="mx-auto container px-2 sm:px-6 lg:px-8">
                     <div className="relative flex h-16 items-center justify-between">
                         <div className="flex justify-between gap-4 ">

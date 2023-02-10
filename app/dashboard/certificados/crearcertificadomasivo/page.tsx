@@ -8,7 +8,7 @@ export default function PageCrearCertificadoMasivo() {
     return (
         <div className="container mx-auto">
             <div className="w-full px-10">
-                <div className="w-full bg-white px-10 py-10 mt-1 shadow-xl">
+                <div className="w-full bg-white px-10 py-10 mt-1">
                     <h1 className="text-gray-400 font-medium text-2xl">
                         Crear Certificados Masivamente
                     </h1>

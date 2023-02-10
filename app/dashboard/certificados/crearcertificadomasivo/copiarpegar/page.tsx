@@ -52,7 +52,7 @@ export default function PagreCrearCertificado() {
         <>
             <div className="container mx-auto">
                 <div className="w-full px-10">
-                    <div className="w-full bg-white px-10 py-10 mt-1 shadow-xl">
+                    <div className="w-full bg-white px-10 py-10 mt-1">
                         <div className="flex justify-between items-center">
                             <h2 className="text-gray-400 font-semibold text-2xl">Copiar y Pegar</h2>
                             <Link

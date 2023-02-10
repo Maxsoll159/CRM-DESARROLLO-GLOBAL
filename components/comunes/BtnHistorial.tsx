@@ -2,7 +2,7 @@
 import { useState, useRef, useContext } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
 import useOnClickOutside from '@/hooks/useOnClickOutside';
-export const OpcionesProps = () => {
+export const BtnHistorial = () => {
     const editorRef = useRef<any>(null);
     const [modal, setModal] = useState<boolean>(false)
     const crearHistorial = () => {
@@ -21,7 +21,7 @@ export const OpcionesProps = () => {
         <>
 
             <div className="flex items-center gap-5">
-                <button className={`${modal ? "text-blue-500" : "text-gray-500"}`}><i className="fa-regular fa-message fa-2x " onClick={() => setModal(!modal)}></i></button>
+                <button className={`relative ${modal ? "text-blue-500" : "text-gray-500"}`}><i className="fa-regular fa-message fa-2x relative" onClick={() => setModal(!modal)}></i><p className='absolute right-[-7px] bottom-[-2px] bg-blue-500 rounded-full text-white text-[8px] w-4 h-4 flex justify-center items-center'>1</p></button>
                 <img src="https://archivos-comunes.s3.amazonaws.com/2022/asesores/LUCERO+ALCANTARA.png" alt="" className='w-9 rounded-full' />
             </div>
 
@@ -73,7 +73,7 @@ export const OpcionesProps = () => {
                         </div>
                     </div>
                 </div>
-            </div>)
+            </div>
 
         </>
     )

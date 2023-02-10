@@ -16,7 +16,7 @@ export default function ActivateLink({ menu }: DataNav) {
             {menu.map((datos) => (
                 <>
                     <Link href={datos.href}>
-                        <p className={`${segment == datos.tipo && "!text-white" } text-dark py-2 rounded-md text-xl font-medium flex items-center gap-3 w-full px-2 h-full text-colorLink capitalize`}>
+                        <p className={`${segment == datos.tipo && "!text-white" } text-dark py-2 rounded-md text-base font-semibold flex items-center gap-3 w-full px-2 h-full text-colorLink capitalize Montserrat`}>
                             <i className={datos.icon}></i>{datos.nombre}
                         </p>
                     </Link>

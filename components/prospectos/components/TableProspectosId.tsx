@@ -4,7 +4,7 @@ import { DatosUnicos } from '@/helpers/DatosProspectos';
 
 
 import { AlumnosPros } from '../interfaces/InterfaceProsp';
-import { OpcionesProps } from "@/components/comunes/OpcionesProsp";
+import { OpcionesProps } from "@/components/comunes/BtnHistorial";
 import { Opciones } from "@/components/comunes/Opciones";
 const columns: TableColumn<AlumnosPros>[] =
     [
@@ -85,6 +85,7 @@ export const TableProspectosId = () => {
             columns={columns}
             data={DatosUnicos[0].alumnosPros}
             highlightOnHover
+            pagination
         />
     )
 }

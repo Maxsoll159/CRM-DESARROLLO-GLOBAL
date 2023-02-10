@@ -1,5 +1,6 @@
 import './globals.css'
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
+import '../node_modules/@flaticon/flaticon-uicons/css/all/all.css'
 import Head from './head';
 import { AppModeProvider } from '../context/AppContext';
 

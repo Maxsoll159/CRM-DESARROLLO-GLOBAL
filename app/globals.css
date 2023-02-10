@@ -2,19 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-.kDEcCH{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.kDEcCH {
     padding: 0 !important;
     margin: 0 !important;
 }
-.kNxEtY{
-   text-shadow: 300 !important;
+
+.kNxEtY {
+    text-shadow: 300 !important;
 }
-.sc-bcXHqe{
-    margin-top:  12px !important;
+
+.sc-bcXHqe {
+    margin-top: 12px !important;
 }
-table, th, td {
+
+table,
+th,
+td {
     border: 1px solid black;
-  }
-.kNxEtY{
+}
+
+.kNxEtY {
     font-weight: 900 !important;
+}
+
+.Montserrat {
+    font-family: 'Montserrat', sans-serif;
 }

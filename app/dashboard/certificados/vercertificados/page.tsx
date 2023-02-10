@@ -8,7 +8,7 @@ export default function PageCertificado() {
     return (
         <div className="container mx-auto">
             <div className="w-full px-10">
-                <div className="w-full bg-white py-10 mt-1">
+                <div className="w-full bg-white mt-1">
                     <p className='font-black text-xl'>Lista de Certificados</p>
                     <TableData />
   

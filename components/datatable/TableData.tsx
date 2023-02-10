@@ -8,6 +8,7 @@ import { FilterComponent } from './components/FilterComponent';
 import { useState } from 'react';
 import { useExportExcel } from '@/hooks/useExportExcel';
 import { Opciones } from '../comunes/Opciones';
+import { BtnHistorial } from '../comunes/BtnHistorial';
 
 const columns: TableColumn<DataRow>[] = [
     {
@@ -43,13 +44,13 @@ const columns: TableColumn<DataRow>[] = [
     {
         name: 'HISTORIAL',
         sortable: true,
-        selector: row => row.Programa,
+        cell: ()=>  <BtnHistorial />,
         width: "6rem"
     },
     {
         name: 'CERTIFICADO',
         sortable: true,
-        cell: () => <img src="/img/cer.webp" alt="" />,
+        cell: () => <i className='fi fi-rr-diploma fa-2x text-gray-400'></i>,
         width: "6rem",
         center: true
     },
@@ -105,13 +106,12 @@ const columns: TableColumn<DataRow>[] = [
         name: 'FECHA',
         sortable: true,
         selector: row => row.Mes,
-        width: "6rem",
+        center: true
     },
     {
         cell: row => <Opciones id={row.Id} row={row} size="small" />,
         allowOverflow: true,
         button: true,
-        width: '56px',
     }
 
 ];

@@ -1,7 +1,7 @@
 "use client"
 import DataTable, { TableColumn } from "react-data-table-component";
 import { AlumnosPros2 } from '../prospectos/interfaces/InterfaceProsp';
-import { OpcionesProps } from "../comunes/OpcionesProsp";
+import { BtnHistorial } from "../comunes/BtnHistorial";
 import { DatosAlumno } from "@/helpers/DatosAlumnos";
 import { Opciones } from "../comunes/Opciones";
 import { FilterComponent } from "../datatable/components/FilterComponent";
@@ -67,7 +67,7 @@ const columns: TableColumn<AlumnosPros2>[] =
             name: 'HISTORIAL',
             sortable: true,
             center: true,
-            cell: () => <OpcionesProps />
+            cell: () => <BtnHistorial />
         },
         {
             name: 'FECHA DE REGISTRO',
@@ -98,6 +98,7 @@ export const TableAlumnosId = () => {
                 data={filteredItems}
                 highlightOnHover
                 selectableRows
+                pagination
             />
 
         </>

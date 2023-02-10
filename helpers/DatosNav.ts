@@ -4,7 +4,7 @@ export const DatosNav = [
         nombre: "dashboard",
         href: "/dashboard",
         tipo: null,
-        icon: 'fa-solid fa-house',
+        icon: 'fi fi-rr-dashboard fa-2x',
         subMenu: []
     },
     {
@@ -12,7 +12,7 @@ export const DatosNav = [
         nombre: "prospectos",
         href: "/dashboard/prospectos",
         tipo: "prospectos",
-        icon: 'fa-regular fa-folder',
+        icon: 'fi fi-rr-users-alt fa-2x',
         subMenu: []
     },
     {
@@ -20,7 +20,7 @@ export const DatosNav = [
         nombre: "certificados",
         href: "/dashboard/certificados/vercertificados",
         tipo: "certificados",
-        icon: 'fa-light fa-chart-pie-simple',
+        icon: 'fi fi-rr-diploma fa-2x',
         subMenu: [{
             id: 1,
             nombre: "Ver Certificados",
@@ -44,7 +44,7 @@ export const DatosNav = [
         nombre: "pagos",
         href: "/pagos",
         tipo: "pagos",
-        icon: 'fa-solid fa-money-bill',
+        icon: 'fi fi-rr-usd-circle fa-2x',
         subMenu: []
     },
     {
@@ -52,7 +52,7 @@ export const DatosNav = [
         nombre: "alumnos",
         href: "/dashboard/alumnos",
         tipo: "alumnos",
-        icon: 'fa-regular fa-user',
+        icon: 'fi fi-rr-graduation-cap fa-2x',
         subMenu: []
     },
     {
@@ -60,7 +60,7 @@ export const DatosNav = [
         nombre: "pendientes",
         href: "/pendientes",
         tipo: "pendientes",
-        icon: 'fa-solid fa-money-bill',
+        icon: 'fi fi-rs-truck-moving fa-2x',
         subMenu: []
     },
     {

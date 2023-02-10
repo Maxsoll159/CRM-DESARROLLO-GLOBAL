@@ -6,7 +6,7 @@ export default function Prospectos({ params }: any) {
     return (
         <div className="container mx-auto">
             <div className="w-full px-10">
-                <div className="w-full bg-white px-16 py-10 mt-1 shadow-xl ">
+                <div className="w-full bg-white px-16 py-10 mt-1">
                     <p className="font-black text-xl">Prospectos</p>
 
                     {/*BUSCADOR*/}
@@ -27,7 +27,7 @@ export default function Prospectos({ params }: any) {
                     </div>
 
                     <div className="mt-5 flex justify-between">
-                        <p className="font-black text-xl">Prospectos Curso SIAF Básico</p>
+                        <p className="font-black text-lg">Prospectos Curso SIAF Básico</p>
                         <BtnCrear tipo={"dashboard/prospectos/crearprospecto"} />
                     </div>
 

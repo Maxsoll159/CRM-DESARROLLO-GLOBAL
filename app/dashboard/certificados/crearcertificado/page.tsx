@@ -35,13 +35,13 @@ export default function PagreCrearCertificado() {
 
 
                             <div className='flex justify-between items-center flex-wrap gap-1 mt-2'>
-                                
+
                                 <div>
                                     <label htmlFor="">DNI</label><br></br>
                                     <input type="text" placeholder="5236521445" className='border border-gray-400 rounded-md py-2 px-4 mt-2 lg:w-36 xl:w-36 w-full !m-0' />
                                 </div>
 
-                                <div className='w-full lg:w-auto xl:w-auto'>
+                                <div className='w-full lg:w-auto xl:w-auto md:w-1/2'>
                                     <label htmlFor="">CATEGORIA</label><br></br>
                                     <select name="" id="" className='border border-gray-400 rounded-md py-2 px-2 mt-2 lg:w-36 xl:w-36 !m-0 w-full'>
                                         <option value="">TODOS</option>
@@ -50,8 +50,8 @@ export default function PagreCrearCertificado() {
                                         <option value="">CURSOS</option>
                                     </select>
                                 </div>
-
-                                <div className='w-full lg:w-auto xl:w-auto'>
+                                
+                                <div className='w-full lg:w-auto xl:w-auto md:w-1/2'>
                                     <label htmlFor="">PROGRAMA</label><br></br>
                                     <select name="" id="" className='border border-gray-400 rounded-md py-2 px-2 mt-2 xl:w-[23rem] 2xl:w-[26rem] w-full !m-0'>
                                         <option value="">SISTEMA INTEGRADO DE ADMINISTRACIÓN FINANCIERA</option>
@@ -60,9 +60,10 @@ export default function PagreCrearCertificado() {
                                         <option value="">CURSOS</option>
                                     </select>
                                 </div>
+
                             </div>
 
-                            
+
                             <div className='flex justify-start gap-2 mt-2 flex-wrap'>
                                 <div>
                                     <label htmlFor="">ESTADO</label><br></br>

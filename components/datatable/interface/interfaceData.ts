@@ -7,4 +7,5 @@ export interface DataRow {
     Categoria: string;
     Programa: string;
     Mes: string;
+    estado: string
 }

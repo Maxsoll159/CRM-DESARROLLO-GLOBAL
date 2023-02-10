@@ -9,10 +9,18 @@ export const DatosNav = [
     },
     {
         id: 2,
+        nombre: "prospectos",
+        href: "/dashboard/prospectos",
+        tipo: "prospectos",
+        icon: 'fa-regular fa-folder',
+        subMenu: []
+    },
+    {
+        id: 3,
         nombre: "certificados",
-        href: "/certificados",
+        href: "/dashboard/certificados/vercertificados",
         tipo: "certificados",
-        icon: 'fa-solid fa-certificate',
+        icon: 'fa-light fa-chart-pie-simple',
         subMenu: [{
             id: 1,
             nombre: "Ver Certificados",
@@ -20,13 +28,19 @@ export const DatosNav = [
             tipo: "vercertificados"
         },{
             id: 2,
-            nombre: "Creacion Masiva",
+            nombre: "Crear Certificado",
             href: "/dashboard/certificados/crearcertificado",
             tipo: "crearcertificado"
+        },
+        {
+            id: 3,
+            nombre: "Creacion Masiva",
+            href: "/dashboard/certificados/crearcertificadomasivo",
+            tipo: "crearcertificadomasivo"
         }]
     },
     {
-        id: 3,
+        id: 4,
         nombre: "pagos",
         href: "/pagos",
         tipo: "pagos",
@@ -34,19 +48,11 @@ export const DatosNav = [
         subMenu: []
     },
     {
-        id: 4,
-        nombre: "prospectos",
-        href: "/prospectos",
-        tipo: "prospectos",
-        icon: 'fa-solid fa-list',
-        subMenu: []
-    },
-    {
         id: 5,
-        nombre: "envios",
-        href: "/envios",
-        tipo: "envios",
-        icon: 'fa-solid fa-money-bill',
+        nombre: "alumnos",
+        href: "/dashboard/alumnos",
+        tipo: "alumnos",
+        icon: 'fa-regular fa-user',
         subMenu: []
     },
     {

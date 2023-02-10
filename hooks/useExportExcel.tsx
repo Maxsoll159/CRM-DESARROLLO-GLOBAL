@@ -1,9 +1,6 @@
-import { useMemo } from 'react';
-import { Export } from '../components/Export';
-export const ExportExcel = (data: any) => {
-
+export const useExportExcel = (data: any) => {
     function convertArrayOfObjectsToCSV(array: any) {
-        let result = "";
+        let result: any = "";
         const columnDelimiter = ',';
         const lineDelimiter = '\n';
         const keys = Object.keys(data[0]);
@@ -22,11 +19,12 @@ export const ExportExcel = (data: any) => {
         return result;
     }
 
+
     function downloadCSV(array: any) {
         const link = document.createElement('a');
         let csv = convertArrayOfObjectsToCSV(array);
         if (csv == null) return;
-        const filename = 'certificados.csv';
+        const filename = 'export.csv';
         if (!csv.match(/^data:text\/csv/i)) {
             csv = `data:text/csv;charset=utf-8,${csv}`;
         }
@@ -35,9 +33,7 @@ export const ExportExcel = (data: any) => {
         link.click();
     }
 
-    const actionsMemo = useMemo(() => <Export onExport={() => downloadCSV(data)} />, []);
-
     return [
-        actionsMemo
+        downloadCSV
     ]
 }

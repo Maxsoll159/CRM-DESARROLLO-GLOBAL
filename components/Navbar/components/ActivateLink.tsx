@@ -1,21 +1,22 @@
 "use client";
 import Link from "next/link";
-import { useSelectedLayoutSegments } from 'next/navigation';
+import { useSelectedLayoutSegment, useSelectedLayoutSegments } from 'next/navigation';
 import { DataNav } from "../interfaces/interfaceNav";
-import { useState } from "react";
 
 export default function ActivateLink({ menu }: DataNav) {
     const valores = useSelectedLayoutSegments();
 
-    const [condicional, setCondicional] = useState<string>("");
+   
+    const valor = menu.find((valo: any) => valo.tipo == valores[valores.length - 1])
+    console.log(valores)
+    console.log("Que ondaaa", valores[valores.length - 1])
     const segment = valores[valores.length - 1]
     return (
         <>
             {menu.map((datos) => (
                 <>
                     <Link href={datos.href}>
-                        <p className={` ${valores[valores.length - 2] == datos.tipo && "text-blue-500"
-                            } text-dark py-2 rounded-md text-base font-medium flex items-center gap-3 w-full px-2 h-full uppercase`}>
+                        <p className={`${segment == datos.tipo && "!text-white" } text-dark py-2 rounded-md text-xl font-medium flex items-center gap-3 w-full px-2 h-full text-colorLink capitalize`}>
                             <i className={datos.icon}></i>{datos.nombre}
                         </p>
                     </Link>
@@ -23,9 +24,10 @@ export default function ActivateLink({ menu }: DataNav) {
                         {datos?.subMenu?.map((submenu) => (
 
                             <Link
+                                key={submenu.id}
                                 href={submenu.href}
-                                className={`${submenu.tipo == segment && "text-blue-500"
-                                    } mx-9 w-10/12 block`}
+                                className={`${submenu.tipo == segment && "!text-white"
+                                    } mx-9 w-10/12 block text-colorLink text-lg`}
                             >
                                 {submenu.nombre}
                             </Link>

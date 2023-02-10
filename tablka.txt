@@ -1,0 +1,42 @@
+
+Nombre	Email	Telefono	Modalidad		Pagina/Medio	Cantidad	Entidad	Fecha
+RONAL	ronalvale77apa@gmail.com	979312648	Curso https://www.desarrolloglobal.pe/cursos/formulacion-evaluacion-proyecto			2023-02-01 09:37:02
+    <h2 className="text-gray-400 font-semibold text-2xl">Copiar y Pegar</h2>
+
+
+
+
+
+
+ <form onSubmit={(e) => captura(e)}>
+                        <textarea name="" id="excel" className="w-1/2 border-red-500  border-2"></textarea>
+                        <button>sad</button>
+                    </form>
+                    <table>
+                        soy lña tabla
+                        <tr>
+                            {
+
+                                datosUsar.map((titu: any) =>
+                                    titu.cabecera?.map((msa: any) => <td>{msa}</td>)
+                                )
+
+                            }
+                        </tr>
+                        {
+                            datosUsar.map((valor) =>
+                                valor.datos.map((dato) => <tr>
+
+                                    <td>{dato[`valor${index}`]}</td>
+                                    <td>{dato.valor0}</td>
+                                    <td>{dato.valor0}</td>
+                                    <td>{dato.valor0}</td>
+                                    <td>{dato.valor0}</td>
+
+
+
+                                </tr>)
+                            )
+                        }
+
+                    </table>

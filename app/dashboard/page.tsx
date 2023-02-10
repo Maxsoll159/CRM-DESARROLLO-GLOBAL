@@ -1,6 +1,5 @@
 
 import Image from 'next/image';
-import LayoutDash from './layout';
 
 
 export default function PageDashboard() {

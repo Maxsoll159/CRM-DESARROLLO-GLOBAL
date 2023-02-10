@@ -1,62 +1,104 @@
+'use client';
+import { useRouter } from 'next/navigation';
 export default function PagreCrearCertificado() {
+    const router = useRouter();
+
     return (
         <div className="container mx-auto">
-            <div className="w-full px-10">
-                <div className="w-full bg-white px-10 py-10 mt-1 shadow-xl">
-                    <h1 className="text-gray-400 font-medium text-2xl">
-                        Crear Certificados Masivamente
-                    </h1>
-                    <div className="flex justify-between mt-10 gap-10 flex-wrap">
-                        <div className="w-full mx-auto xl:w-[48%] lg:w-[48%]">
-                            <table className="border-collapse border border-slate-500 w-full">
-                                <thead>
-                                    <tr>
-                                        <th className="border border-slate-600 ">State</th>
-                                        <th className="border border-slate-600 ">City</th>
-                                        <th className="border border-slate-600 ">City</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td className="border border-slate-700 ">Indiana</td>
-                                        <td className="border border-slate-700 ">Indianapolis</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border border-slate-700 ">Ohio</td>
-                                        <td className="border border-slate-700 ">Columbus</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border border-slate-700 ">Michigan</td>
-                                        <td className="border border-slate-700 ">Detroit</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div className="w-full xl:w-[48%] lg:w-[48%]">
-                            <div className="w-full bg-green-100 py-20 border-dashed border-2 border-gray-600">
-                                <h2 className="text-center font-semibold text-lg">
-                                    Subir Archivo Excel
-                                </h2>
-                                <div className="flex justify-center mt-10">
-                                    <i className="fa-solid fa-file-excel fa-3x text-center"></i>
-                                </div>
-                                <form className="flex items-center space-x-6 justify-center mt-10">
-                                    <div className="shrink-0"></div>
-                                    <label className="block">
-                                        <input
-                                            type="file"
-                                            className="block w-full text-sm text-slate-500
-                                        file:mr-4 file:py-2 file:px-4
-                                        file:rounded-full file:border-0
-                                        file:text-sm file:font-semibold
-                                        file:bg-green-50 file:text-green-700
-                                        hover:file:bg-green-100
-                    "/>
+            <div className="w-full px-10 ">
+                <div className='bg-white py-32 px-7'>
+                    <p className='font-black text-xl pl-60'>Nuevo Certificado</p>
+   
+                        <form action="" className='bg-slate-100 rounded-xl p-10 xl:w-[67%] lg:w-[67%] w-full mt-10 block mx-auto'>
+                            <div className='flex justify-between flex-wrap'>
+                                <div>
+                                    <label className='ml-3 font-mono'>
+                                        CODIGO
                                     </label>
-                                </form>
+                                    <br />
+                                    <input type="text" className='border border-gray-400 rounded-md py-2 px-4 mt-2 lg:w-28 xl:w-28 w-full' placeholder='12541' />
+                                </div>
+                                <div>
+                                    <label className='ml-3 font-mono'>
+                                        REGISTRO
+                                    </label>
+                                    <br />
+                                    <input type="text" className='border border-gray-400 rounded-md py-2 px-4 mt-2 w-full lg:w-36 xl:w-36' placeholder='4526' />
+                                </div>
+                                <div>
+                                    <label className='ml-3 font-mono'>
+                                        NOMBRES
+                                    </label>
+                                    <br />
+                                    <input type="text" className='border border-gray-400 rounded-md py-2 px-4  mt-2 w-full lg:w-72 xl:w-72' placeholder='JUAN ALBERTO' />
+                                </div>
+                                <div>
+                                    <label className='ml-3 font-mono'>
+                                        APELLIDOS
+                                    </label>
+                                    <br />
+                                    <input type="text" className='border border-gray-400 rounded-md py-2 px-4 mt-2 w-full lg:w-72 xl:w-72' placeholder='SANCHEZ CARDENAS' />
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                            <div className='flex lg:mt-5 xl:mt-5 justify-between flex-wrap'>
+                                <div>
+                                    <label className='ml-3 font-mono'>
+                                        DNI
+                                    </label>
+                                    <br />
+                                    <input type="text" className='border border-gray-400 rounded-md py-2 px-4 mt-2 w-full lg:w-40 xl:w-40' placeholder='5236521445' />
+                                </div>
+                                <div>
+                                    <label className='ml-3 font-mono'>
+                                        CATEGORIA
+                                    </label>
+                                    <br />
+                                    <select name="" id="" className='border border-gray-400 rounded-md py-2 px-3 placeholder:m-4 mt-2 text-gray-400 w-56'>
+                                        <option value="Elegir">ELEGIR:</option>
+                                        <option value="DIPLOMAS">DIPLOMAS</option>
+                                        <option value="DIPLOMADOS">DIPLOMADOS</option>
+                                        <option value="CURSOS">CURSOS</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label className='ml-3 font-mono'>
+                                        PROGRAMA
+                                    </label>
+                                    <br />
+                                    <select name="" id="" className='border border-gray-400 rounded-md py-2 px-3 placeholder:m-4 mt-2 text-gray-400 w-full'>
+                                        <option value="Elegir">SISTEMA INTEGRADO DE ADMINISTRACIÓN FINANCIERA</option>
+                                        <option value="DIPLOMAS">DIPLOMAS</option>
+                                        <option value="DIPLOMADOS">DIPLOMADOS</option>
+                                        <option value="CURSOS">CURSOS</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div className='lg:mt-5 xl:mt-5 flex items-center gap-3 flex-wrap'>
+                                <div>
+                                    <label className='ml-3 font-mono'>
+                                        ESTADO
+                                    </label>
+                                    <br />
+                                    <input type="text" className='border border-gray-400 rounded-md py-2 px-4 placeholder:m-4 mt-2 w-full lg:w-28 xl:w-28' placeholder='EN OFICINA' />
+                                </div>
+                                <div>
+                                    <label className='ml-3 font-mono'>
+                                        MES/AÑO
+                                    </label>
+                                    <br />
+                                    <input type="date" className='border border-gray-400 rounded-md py-2 px-4 placeholder:m-4 mt-2 w-full xl:w-44 lg:w-44' min="17/05/2022" />
+                                </div>
+                                <div>
+                                    <label className='ml-3 font-mono'>
+                                        CODIGO QR
+                                    </label>
+                                    <br />
+                                    <button className='text-blue-500 border-2 border-blue-500 flex items-center px-2 py-2 rounded bg-white mt-2 gap-2 w-100'><i className="fa-solid fa-qrcode"></i>Generar QR</button>
+                                </div>
+                            </div>
+                        </form>
+          
+
                 </div>
             </div>
         </div>

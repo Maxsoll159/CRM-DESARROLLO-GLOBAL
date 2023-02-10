@@ -1,6 +1,7 @@
 import './globals.css'
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
 import Head from './head';
+import { AppModeProvider } from '../context/AppContext';
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
@@ -11,7 +12,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
       */}
       <Head />
       <body>
-        {children}
+        <AppModeProvider>{children}</AppModeProvider>
       </body>
     </html>
   )

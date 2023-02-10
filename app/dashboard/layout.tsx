@@ -8,15 +8,23 @@ export default function LayoutDash({ children, }: { children: React.ReactNode })
 
 
         <body className="bg-bg-fondoDas">
-            <div className="w-full h-full">
-                <Navbar />
-                <div className="container mx-auto py-10">
-                    <div className="w-full flex gap-5">
-                        <Menu />
-                        {children}
-                    </div>
+
+            <div className="flex items-start">
+                <Menu />
+                <div className="w-full space-y-11">
+                    <Navbar />
+                    {children}
                 </div>
+                
+
             </div>
+
+
+
+
+
+
+
         </body>
 
     )

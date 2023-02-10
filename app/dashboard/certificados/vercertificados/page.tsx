@@ -1,5 +1,4 @@
 
-import { Modal } from '@/components/certificados/Modal'
 import dynamic from 'next/dynamic'
 
 
@@ -10,7 +9,7 @@ export default function PageCertificado() {
         <div className="container mx-auto">
             <div className="w-full px-10">
                 <div className="w-full bg-white px-10 py-10 mt-1 shadow-xl">
-
+                    <p className='font-black text-xl'>Lista de Certificados</p>
                     <TableData />
   
                 </div>

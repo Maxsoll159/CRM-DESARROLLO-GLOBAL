@@ -4,7 +4,7 @@ interface PropExport {
     onExport: any
 }
 export const Export: React.FC<PropExport> = ({ onExport }) => {
-    console.log(onExport)
+    console.log("SOY EL ON EXPORT",onExport)
     return (
         <div className="flex flex-col justify-center gap-3 my-5 lg:flex-row ">
            <Modal/>

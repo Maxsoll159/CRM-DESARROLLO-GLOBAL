@@ -8,6 +8,7 @@ export const data = [
         Categoria: "Curso",
         Programa: "Formulación y Evaluación de Proyetctos",
         Mes: "1/2020",
+        estado: "Entregado"
     },
     {
         Id: 10417,
@@ -18,6 +19,7 @@ export const data = [
         Categoria: "Curso",
         Programa: "Formulación y Evaluación de Proyetctos",
         Mes: "1/2020",
+        estado: "Oficina"
     },
     {
         Id: 10416,
@@ -28,6 +30,7 @@ export const data = [
         Categoria: "Curso",
         Programa: "ETT Y TDR para compras eficientes",
         Mes: "1/2020",
+        estado: "Aula Virtual"
     },
     {
         Id: 21199,
@@ -38,6 +41,7 @@ export const data = [
         Categoria: "Curso",
         Programa: "Formulación y Evaluación de Proyetctos",
         Mes: "1/2020",
+        estado: "Olva"
     },
     {
         Id: 21171,
@@ -48,6 +52,7 @@ export const data = [
         Categoria: "Curso",
         Programa: "Planeamiento estrategico segun Ceplan",
         Mes: "1/2020",
+        estado: "Entregado"
     },
     {
         Id: 10412,
@@ -58,6 +63,7 @@ export const data = [
         Categoria: "Curso",
         Programa: "Planeamiento estrategico segun Ceplan",
         Mes: "1/2020",
+        estado: "Pendiente"
     },
     {
         Id: 13772,
@@ -68,6 +74,7 @@ export const data = [
         Categoria: "Diploma",
         Programa: "Contrataciones del estado, Osce y Seace 3.0",
         Mes: "1/2020",
+        estado: "Oficina"
     },
     {
         Id: 4928,
@@ -78,6 +85,7 @@ export const data = [
         Categoria: "CURSO",
         Programa: "SIAF BASICO",
         Mes: "2/2019",
+        estado: "Olva"
     },
     {
         Id: 4927,
@@ -88,6 +96,7 @@ export const data = [
         Categoria: "CURSO",
         Programa: "SIGA LOGISTICO",
         Mes: "2/2019",
+        estado: "Aula Virtual"
     },
     {
         Id: 4926,
@@ -98,6 +107,7 @@ export const data = [
         Categoria: "CURSO",
         Programa: "SIGA LOGISTICO",
         Mes: "2/2019",
+        estado: "Olva"
     },
     {
         Id: 4925,
@@ -108,6 +118,7 @@ export const data = [
         Categoria: "CURSO",
         Programa: "SIGA LOGISTICO",
         Mes: "2/2019",
+        estado: "Entregado"
     },
     {
         Id: 37843,
@@ -118,6 +129,7 @@ export const data = [
         Categoria: "Diploma",
         Programa: "SISTEMAS ADMINISTRATIVOS EN GESTIÓN PÚBLICA - SIAF RP, SIGA MEF y OSCE",
         Mes: "11/2022",
+        estado: "Aula Virtual"
     },
     {
         Id: 37842,
@@ -128,6 +140,7 @@ export const data = [
         Categoria: "curso",
         Programa: "PREPARACIÓN PARA LA CERTIFICACIÓN OSCE LEY Nº30225 modificada por D. L. 1444 y su Reglamento D.S. 234-2022-EF",
         Mes: "11/2022",
+        estado: "Pendiente"
     },
     {
         Id: 37841,
@@ -138,5 +151,6 @@ export const data = [
         Categoria: "Diploma",
         Programa: "Sistemas Administrativos en la Gestión Pública SIAF RP, SIGA MEF Y OSCE",
         Mes: "11/2022",
+        estado: "Oficina"
     }
 ]

@@ -4,7 +4,7 @@ import { DatosUnicos } from '@/helpers/DatosProspectos';
 
 
 import { AlumnosPros } from '../interfaces/InterfaceProsp';
-import { OpcionesProps } from "@/components/comunes/BtnHistorial";
+import { BtnHistorial } from "@/components/comunes/BtnHistorial";
 import { Opciones } from "@/components/comunes/Opciones";
 const columns: TableColumn<AlumnosPros>[] =
     [
@@ -60,7 +60,7 @@ const columns: TableColumn<AlumnosPros>[] =
         {
             sortable: true,
             center: true,
-            cell: () => <OpcionesProps />
+            cell: () => <BtnHistorial />
         },
         {
             name: 'CORREO',

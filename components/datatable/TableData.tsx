@@ -1,9 +1,7 @@
 "use client"
 import DataTable, { TableColumn } from 'react-data-table-component';
-
 import { data } from './interface/data';
 import { DataRow } from './interface/interfaceData';
-import { Acciones } from './components/Acciones';
 import { FilterComponent } from './components/FilterComponent';
 import { useState } from 'react';
 import { useExportExcel } from '@/hooks/useExportExcel';

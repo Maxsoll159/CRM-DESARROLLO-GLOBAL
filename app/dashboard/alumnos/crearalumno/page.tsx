@@ -145,7 +145,12 @@ export default function CrearAlumno() {
                                         <div>
                                             <label htmlFor="" className='text-gray-500 text-xs'>Comprobante:</label><br />
                                             <select name="" id="" className='border border-gray-300 p-2 rounded xl:w-[143px] lg:w-[143px] md:w-[143px] w-full'>
+                                                <option value="">No Aplica</option>
                                                 <option value="">Boleta</option>
+                                                <option value="">Rus Edith</option>
+                                                <option value="">Ruc 20 desarrolloglobal</option>
+                                                <option value="">Ruc 10 escuela EGG</option>
+                                                <option value="">Factura desarrolloglobal</option>
                                             </select>
                                         </div>
                                         <div>
@@ -200,7 +205,7 @@ export default function CrearAlumno() {
                                     <div className='flex flex-wrap justify-start items-center border border-gray-200 bg-gray-100 rounded-lg px-10 py-5 lg:w-[1034px] xl:w-[1034px] w-full mt-5 gap-3'>
                                         <div>
                                             <label htmlFor="" className='text-gray-500 text-xs'>N° COMPROBANTE</label><br />
-                                            <input type="text" placeholder='024518' className='border border-gray-300 p-2 rounded xl:w-[150px] lg:w-[150px] md:w-[150px] w-full' />
+                                            <input type="t  ext" placeholder='024518' className='border border-gray-300 p-2 rounded xl:w-[150px] lg:w-[150px] md:w-[150px] w-full' />
                                         </div>
                                         <div>
                                             <label htmlFor="" className='text-gray-500 text-xs'>INVERSIÒN</label><br />
@@ -208,7 +213,11 @@ export default function CrearAlumno() {
                                         </div>
                                         <div>
                                             <label htmlFor="" className='text-gray-500 text-xs'>CUOTAS</label><br />
-                                            <input type="text" placeholder='01' className='border border-gray-300 p-2 rounded xl:w-[118px] lg:w-[118px] md:w-[118px] w-full' />
+                                            <select name="" id="" className='border border-gray-300 p-2 rounded xl:w-[118px] lg:w-[118px] md:w-[118px] w-full'>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                            </select>
                                         </div>
                                         <div>
                                             <label htmlFor="" className='text-gray-500 text-xs'>DESCUENTO</label><br />
@@ -221,7 +230,7 @@ export default function CrearAlumno() {
                                             </select>
                                         </div>
                                     </div>
-                                    <div className='lg:w-[1034px] xl:w-[1034px] w-full mt-5 rounded-xl'>
+                                    <div className='lg:w-[1034px] xl:w-[1034px] w-full mt-5 rounded-xl border'>
                                         <div className='p-7 bg-gray-100 flex items-center justify-between'>
                                             <p>Cuota</p>
                                             <p>Fecha vencimiento</p>
@@ -230,6 +239,30 @@ export default function CrearAlumno() {
                                             <p>Monto Cuota (S/)</p>
                                             <p>Editar</p>
                                         </div>
+                                        <div className='flex items-center justify-between p-7'>
+                                            <p>RP8-02</p>
+                                            <p>15/08/2023</p>
+                                            <p>465456465</p>
+                                            <p>BCP</p>
+                                            <p>S/ 317..00</p>
+                                            <div className='flex gap-3 text-gray-400'>
+                                                <button><i className="fi fi-rr-edit text-xl"></i></button>
+                                                <button><i className="fi fi-rs-disk text-xl"></i></button>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div className='flex items-center justify-between p-7'>
+                                            <p>RP8-02</p>
+                                            <p>15/08/2023</p>
+                                            <p>465456465</p>
+                                            <p>BCP</p>
+                                            <p>S/ 317..00</p>
+                                            <div className='flex gap-3 text-gray-400'>
+                                                <button><i className="fi fi-rr-edit text-xl"></i></button>
+                                                <button><i className="fi fi-rs-disk text-xl"></i></button>
+                                            </div>
+                                        </div>
+                                        <hr />
                                     </div>
                                 </>
                             )

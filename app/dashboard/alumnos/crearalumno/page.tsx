@@ -8,6 +8,89 @@ export default function CrearAlumno() {
     })
     const { alumno, programa, pagos } = opcionesPago
     const [certificado, setCertificado] = useState<boolean>(false)
+
+    const crearAlumno = (e: any) => {
+        e.preventDefault()
+        const pagos = e.target.pagos.value
+        console.log(pagos)
+    }
+
+
+    const [cuotasArray, setCuotasArray] = useState<number>()
+    const [precioForm, setPrecioForm] = useState<number>()
+    const capturar = (e: any) => {
+        setCuotasArray(e.target.value)
+    }
+
+    const precio = (e: any) => {
+        setPrecioForm(e.target.value)
+    }
+    const [arrayPagos, setArrayPagos] = useState<any>([])
+    const GenerarPago = () => {
+        let cuota
+        if (precioForm !== undefined && cuotasArray !== undefined) {
+            cuota = precioForm / cuotasArray
+            let array = []
+            if (cuotasArray == 1) {
+                array = [{
+                    id: 1,
+                    cuota: "sd",
+                    fechaVencimiento: "15/08/2023",
+                    numeroOperacion: "",
+                    MedioPago: "BCP",
+                    montoCuota: cuota
+                }]
+                setArrayPagos(array)
+            } else if (cuotasArray == 2) {
+                array= [{
+                    id: 1,
+                    cuota: "sd",
+                    fechaVencimiento: "15/08/2023",
+                    numeroOperacion: "",
+                    MedioPago: "BCP",
+                    montoCuota: cuota
+                },
+                {
+                    id: 2,
+                    cuota: "sd",
+                    fechaVencimiento: "15/08/2023",
+                    numeroOperacion: "",
+                    MedioPago: "BCP",
+                    montoCuota: cuota
+                }]
+                setArrayPagos(array)
+            } else if(cuotasArray == 3) {
+                array = [{
+                    id: 1,
+                    cuota: "sd",
+                    fechaVencimiento: "15/08/2023",
+                    numeroOperacion: "",
+                    MedioPago: "BCP",
+                    montoCuota: cuota
+                },
+                {
+                    id: 2,
+                    cuota: "sd",
+                    fechaVencimiento: "15/08/2023",
+                    numeroOperacion: "",
+                    MedioPago: "BCP",
+                    montoCuota: cuota
+                },
+                {
+                    id: 3   ,
+                    cuota: "sd",
+                    fechaVencimiento: "15/08/2023",
+                    numeroOperacion: "",
+                    MedioPago: "BCP",
+                    montoCuota: cuota
+                }]
+                setArrayPagos(array)
+            }
+        }
+
+
+    }
+
     return (
         <div className="container mx-auto">
             <div className="w-full px-10">
@@ -32,7 +115,7 @@ export default function CrearAlumno() {
 
                 </div>
                 <div className=''>
-                    <form action="" className='w-full'>
+                    <form action="" className='w-full' onSubmit={(e) => crearAlumno(e)}>
 
                         {
                             alumno ? (
@@ -203,17 +286,18 @@ export default function CrearAlumno() {
                                         <p className='font-black text-lg'>Datos de Facturación</p>
                                     </div>
                                     <div className='flex flex-wrap justify-start items-center border border-gray-200 bg-gray-100 rounded-lg px-10 py-5 lg:w-[1034px] xl:w-[1034px] w-full mt-5 gap-3'>
+                                        {/*DESDE AQUI COMIENZA*/}
                                         <div>
                                             <label htmlFor="" className='text-gray-500 text-xs'>N° COMPROBANTE</label><br />
                                             <input type="t  ext" placeholder='024518' className='border border-gray-300 p-2 rounded xl:w-[150px] lg:w-[150px] md:w-[150px] w-full' />
                                         </div>
                                         <div>
                                             <label htmlFor="" className='text-gray-500 text-xs'>INVERSIÒN</label><br />
-                                            <input type="text" placeholder='S/ 457.00' className='border border-gray-300 p-2 rounded xl:w-[118px] lg:w-[118px] md:w-[118px] w-full' />
+                                            <input type="text" placeholder='S/ 457.00' value={precioForm} onChange={(e) => precio(e)} className='border border-gray-300 p-2 rounded xl:w-[118px] lg:w-[118px] md:w-[118px] w-full' />
                                         </div>
                                         <div>
                                             <label htmlFor="" className='text-gray-500 text-xs'>CUOTAS</label><br />
-                                            <select name="" id="" className='border border-gray-300 p-2 rounded xl:w-[118px] lg:w-[118px] md:w-[118px] w-full'>
+                                            <select name="" className='border border-gray-300 p-2 rounded xl:w-[118px] lg:w-[118px] md:w-[118px] w-full' onChange={(e) => capturar(e)}>
                                                 <option value="1">01</option>
                                                 <option value="2">02</option>
                                                 <option value="3">03</option>
@@ -229,6 +313,7 @@ export default function CrearAlumno() {
                                                 <option value="">Cristina Balbuena</option>
                                             </select>
                                         </div>
+                                        <button onClick={GenerarPago} className="bg-green-500 py-3 px-2 rounded-lg text-white flex items-center gap-3"><i className="fi fi-rr-dollar flex items-center"></i>Generara Cuato</button>
                                     </div>
                                     <div className='lg:w-[1034px] xl:w-[1034px] w-full mt-5 rounded-xl border'>
                                         <div className='p-7 bg-gray-100 flex items-center justify-between'>
@@ -239,31 +324,27 @@ export default function CrearAlumno() {
                                             <p>Monto Cuota (S/)</p>
                                             <p>Editar</p>
                                         </div>
-                                        <div className='flex items-center justify-between p-7'>
-                                            <p>RP8-02</p>
-                                            <p>15/08/2023</p>
-                                            <p>465456465</p>
-                                            <p>BCP</p>
-                                            <p>S/ 317..00</p>
-                                            <div className='flex gap-3 text-gray-400'>
-                                                <button><i className="fi fi-rr-edit text-xl"></i></button>
-                                                <button><i className="fi fi-rs-disk text-xl"></i></button>
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        <div className='flex items-center justify-between p-7'>
-                                            <p>RP8-02</p>
-                                            <p>15/08/2023</p>
-                                            <p>465456465</p>
-                                            <p>BCP</p>
-                                            <p>S/ 317..00</p>
-                                            <div className='flex gap-3 text-gray-400'>
-                                                <button><i className="fi fi-rr-edit text-xl"></i></button>
-                                                <button><i className="fi fi-rs-disk text-xl"></i></button>
-                                            </div>
-                                        </div>
-                                        <hr />
+                                        {
+                                            arrayPagos.map((valor:any) => (
+                                                <>
+                                                    <div className='flex items-center justify-between p-7'>
+                                                        <p>{valor.cuota}</p>
+                                                        <p>15/08/2023</p>
+                                                        <p>465456465</p>
+                                                        <p>BCP</p>
+                                                        <p>{valor.montoCuota}</p>
+                                                        <div className='flex gap-3 text-gray-400'>
+                                                            <button><i className="fi fi-rr-edit text-xl"></i></button>
+                                                            <button><i className="fi fi-rs-disk text-xl"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <hr />
+                                                </>
+                                            ))
+                                        }
+
                                     </div>
+                                    <button type='submit'>Crear</button>
                                 </>
                             )
                         }

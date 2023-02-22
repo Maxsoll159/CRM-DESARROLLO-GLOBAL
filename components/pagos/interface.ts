@@ -29,5 +29,6 @@ export interface DataCuotas {
     monto: number;
     medio: string;
     numeroComprobante: string,
-    estado: string
+    estado: string;
+    fechaVencimiento: string
 }

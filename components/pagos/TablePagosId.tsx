@@ -22,11 +22,6 @@ const columns: TableColumn<DataCuotas>[] = [
         center: true
     },
     {
-        name: 'FECHA DE VENC',
-        cell: row => row.fechaVencimiento,
-        center: true
-    },
-    {
         name: 'COMPROBANTE',
         selector: row => row.numeroComprobante,
         center: true,

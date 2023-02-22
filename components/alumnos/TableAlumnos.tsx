@@ -43,7 +43,6 @@ export default function TableAlumnos () {
     const [setFilterText, setFilterSelect, setFiltroFechas,filteredAccounts ] = useFiltrosTable(DatosProspectos)
     return (
         <>
-        <button>Crear Alumno</button>
         <FiltrosAlumnos setFilterText={setFilterText}  setFilterSelect={setFilterSelect} setFiltroFechas={setFiltroFechas} />
         <DataTable
             columns={columns}

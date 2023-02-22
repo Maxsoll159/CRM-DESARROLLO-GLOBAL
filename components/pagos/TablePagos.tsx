@@ -95,7 +95,7 @@ const columns: TableColumn<DataPagosd>[] = [
         ]
     },
     {
-        cell: row => <Opciones id={row.id} row={row} size="small" />,
+        cell: row => <Opciones id={row.id} row={row} tipo="pagos" size="small"  />,
         allowOverflow: true,
         button: true,
     }

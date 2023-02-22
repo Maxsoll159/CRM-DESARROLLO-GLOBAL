@@ -19,11 +19,17 @@ export const DataPagos:Array<DataPagosd> = [
         cuotas: [{
             id: 1,
             monto: 200,
-            estado: "Pagado",
+            medio: "YAPE",
+            numeroComprobante: "465456465",
+            estado: "Realizado",
+            fechaVencimiento: "21/02/2023"
         }, {
             id: 2,
             monto: 300,
-            estado: "Pendiente"
+            medio: "YAPE",
+            numeroComprobante: "",
+            estado: "Pendiente",
+            fechaVencimiento: "21/03/2023"
         }]
     },
     {
@@ -44,11 +50,17 @@ export const DataPagos:Array<DataPagosd> = [
         cuotas: [{
             id: 1,
             monto: 200,
+            medio: "Interbank",
+            numeroComprobante: "",
             estado: "Pendiente",
+            fechaVencimiento: "19/02/2023"
         }, {
             id: 2,
             monto: 300,
-            estado: "Pendiente"
+            medio: "Interbank",
+            numeroComprobante: "",
+            estado: "Pendiente",
+            fechaVencimiento: "19/03/2023"
         }]
     },
     {
@@ -69,11 +81,17 @@ export const DataPagos:Array<DataPagosd> = [
         cuotas: [{
             id: 1,
             monto: 200,
-            estado: "Pagado",
+            medio: "PLIN",
+            numeroComprobante: "5954564",
+            estado: "Realizado",
+            fechaVencimiento: "25/02/2023"
         }, {
             id: 2,
             monto: 300,
-            estado: "Pagado"
+            medio: "PLIN",
+            numeroComprobante: "5954564",
+            estado: "Realizado",
+            fechaVencimiento: "25/03/2023"
         }]
     },
     {
@@ -94,11 +112,17 @@ export const DataPagos:Array<DataPagosd> = [
         cuotas: [{
             id: 1,
             monto: 200,
-            estado: "Pagado",
+            medio: "BCP",
+            numeroComprobante: "5954564",
+            estado: "Realizado",
+            fechaVencimiento: "30/02/2023"
         }, {
             id: 2,
             monto: 300,
-            estado: "Pagado"
+            medio: "BCP",
+            numeroComprobante: "5954564",
+            estado: "Realizado",
+            fechaVencimiento: "30/03/2023"
         }]
     },
     {
@@ -119,16 +143,25 @@ export const DataPagos:Array<DataPagosd> = [
         cuotas: [{
             id: 1,
             monto: 200,
-            estado: "Pagado",
+            medio: "BBVA",
+            numeroComprobante: "",
+            estado: "Pendiente",
+            fechaVencimiento: "28/02/2023"
         }, {
             id: 2,
             monto: 300,
-            estado: "Pagado"
+            medio: "BBVA",
+            numeroComprobante: "",
+            estado: "Pendiente",
+            fechaVencimiento: "28/03/2023"
         },
         {
             id: 3,
             monto: 400,
-            estado: "Pendiente"
+            medio: "BBVA",
+            numeroComprobante: "",
+            estado: "Pendiente",
+            fechaVencimiento: "28/04/2023"
         }
         ]
     }

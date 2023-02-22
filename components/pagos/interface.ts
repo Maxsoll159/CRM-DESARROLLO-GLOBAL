@@ -24,8 +24,10 @@ interface DataEditor{
 }
 
 
-interface DataCuotas {
+export interface DataCuotas {
     id: number;
     monto: number;
-    estado: string;
+    medio: string;
+    numeroComprobante: string,
+    estado: string
 }

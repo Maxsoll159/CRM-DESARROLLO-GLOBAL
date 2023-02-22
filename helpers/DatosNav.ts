@@ -42,7 +42,7 @@ export const DatosNav = [
     {
         id: 4,
         nombre: "pagos",
-        href: "/pagos",
+        href: "/dashboard/pagos",
         tipo: "pagos",
         icon: 'fi fi-rr-usd-circle fa-2x',
         subMenu: []

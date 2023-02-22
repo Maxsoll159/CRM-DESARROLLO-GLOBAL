@@ -4,7 +4,7 @@ import DataTable, { TableColumn } from "react-data-table-component";
 import { DataCuotas } from "./interface";
 import { MOdalPagos } from './ModalPagos';
 import { useEffect, useState } from 'react';
-import { Cargando } from "../otros/cargando";
+import { Cargando } from "../otros/Cargando";
 const customStyles = {
     headCells: {
         style: {
